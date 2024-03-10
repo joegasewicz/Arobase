@@ -1,6 +1,8 @@
 # Arobase
 A micro frontend library based on the observer pattern.
 
+Work in progress, please call back soon...
+
 ### Why Micro?
 Arobase is designed to be a *drop in* micro app within an existing html template,
 ideal for such web frameworks as Rails, Django or Spring Boot.
