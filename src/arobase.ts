@@ -61,7 +61,9 @@ class Arobase {
             const tags = node.querySelectorAll("[ar-tag]");
             tags.forEach((tag) => {
                 const tagName = tag.getAttribute("ar-tag");
-                tag.innerHTML = this.state.tags[viewName][tagName];
+                if (tagName) {
+                    tag.innerHTML = this.state.tags[viewName][tagName];
+                }
             });
         });
     }

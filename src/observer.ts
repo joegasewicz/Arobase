@@ -16,6 +16,10 @@ class ModelSubject<T> implements Subject<T> {
 
     private model: T;
 
+    constructor(model: T) {
+        this.model = model;
+    }
+
     public addObserver(observer: Observer<T>): void {
         this.observers = [observer, ...this.observers];
     }
@@ -27,7 +31,7 @@ class ModelSubject<T> implements Subject<T> {
     }
 
     removeObserver(observer: Observer<T>): void {
-        let observers = [];
+        let observers: Array<Observer<T>> = [];
         for (let obs of this.observers) {
             if (obs.viewName !== observer.viewName) {
                 observers = [obs, ...observers]
@@ -45,6 +49,10 @@ class ModelSubject<T> implements Subject<T> {
 
 class ViewObserver<T> implements Observer<T> {
     readonly viewName: string;
+
+    constructor(viewName: string) {
+        this.viewName = viewName;
+    }
 
     public update(): void {
         // update the view template
