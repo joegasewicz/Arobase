@@ -1,7 +1,7 @@
 # Arobase
-A micro frontend library based on the observer pattern.
+A micro frontend library, inspired by BackboneJS.
 
-Work in progress, please call back soon...
+⚠️ Work in progress, please call back soon...
 
 ### Why Micro?
 Arobase is designed to be a *drop in* micro app within an existing html template,
