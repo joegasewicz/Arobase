@@ -1,5 +1,5 @@
 # Arobase
-A micro frontend library, inspired by BackboneJS.
+A micro frontend library, inspired by [BackboneJS](https://backbonejs.org/).
 
 ⚠️ Work in progress, please call back soon...
 
